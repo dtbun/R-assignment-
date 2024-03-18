@@ -1,0 +1,26 @@
+```{r}
+# You have clearly specified each aspect. Starting from Data Inspection
+# 1. Data Inspection
+# You correctly installed and loaded the necessary packages (data.table, dplyr, tidyverse, tidyr, ggplot2, furniture) for data handling, manipulation, and visualization.
+#You used the read_tsv() function to read the two data files (fang_et_al_genotypes.txt and snp_position.txt) into data frames (fang and snp).
+#The code inspects the structure of the data frames using structure(), providing insights into the number of rows, columns, and column names. Consider using glimpse() or str() functions from the dplyr or base package, respectively, for more detailed information about column data types and sample data.
+
+```
+
+```{r}
+# 2. Data Processsing
+# For maize and teosinte data, you filtered rows based on the specified groups that starts with ("ZMM") for maize and ("ZMP") for teosinte.
+#Whereas from snp_position file you cut the column 1,3,4 and saved it to snp_f.
+#You transposed the maize and teosinte data frame using t() function.
+##You joined the transposed and filtered maize and teosinte data with SNP positions using merge() based on the "SNP_ID" column.
+# However while creating 20 files for both maize and teosinte based on increasing and decreasing position values you seems to be using loop function. It would be great if you can generate these file using different functions/method as Professor asked us to avoid using loop to generate the files.
+# There were steps performed for removing data with unknown and multiple chromosomes which would help ensure that the data used for further analysis is consistent and reliable. However I couldn't find steps for removing data with multiple Position.
+#There are sections in the code where missing values ("?") are handled by replacing them with appropriate values ("-/-"), which is good for data cleaning. Ensure that all relevant columns with missing values are addressed to maintain data integrity.
+```
+
+```{r}
+# Visualization
+#The code utilizes ggplot2 for data visualization and are generated using geom_bar() and geom_col(), but some improvements can be made in plot customization, such as adjusting plot aesthetics (e.g., color, theme).
+#It would be great if you could provide detailed comments and documentation for your code especially for visualization part.
+```
+
