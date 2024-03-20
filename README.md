@@ -1,2 +1,2 @@
 # R-assignment-
-This is the r assignment folder. Just copy the branch and run.
+This is the R assignment folder for Daniel Bun. Just fork the branch and run.
