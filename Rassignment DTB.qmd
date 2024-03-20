@@ -5,6 +5,16 @@ format: html
 editor: visual
 ---
 
+# Introduction
+
+Hello, here is the code for the EEOB/BCB 546 2024 spring class. The goal of this assignment is to inspect 2 datafiles, process them for data analysis, and then utilize visualization package(s) in R to show the data.
+
+Data visualization only has inspection of column number, row number, and file size.
+
+Data processing we are taking the 2 files and combining them. This involves a transposing step as one file is oriented differently. Then we want to filter the files for certain data, i.e. SNP by chromosome, multiple, or missing data as commented in the code.
+
+Lastly, there are graphs created to visually show certain data.
+
 ```{r}
 library(tidyverse)
 library(tidyr)
@@ -33,6 +43,7 @@ file.size("fang_et_al_genotypes.txt")
 structure(fang)
 #2782 rows
 #986 columns
+
 
 ##DATA PROCESSING MAIZE
 
